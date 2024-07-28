@@ -17,13 +17,7 @@ html, body {
   align-items: center;
 }
 
-@media (min-width: 600px) {
-  .container {
-    width: 550px;
-    height: 868px;
-    padding: 100px; /* Restore padding for larger screens */
-  }
-}
+
 
 /* Info Section */
 .info {
