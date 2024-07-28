@@ -11,7 +11,7 @@ html, body {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 868px;
+  height: 100%;
   background-color: #282D35;
   padding: 20px; /* Adjust padding for mobile */
   align-items: center;
