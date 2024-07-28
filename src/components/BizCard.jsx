@@ -26,7 +26,7 @@ return (
     </section>
     <section className='qr-code-section'>
         <div className="qr-code">
-            <img src="../src/assets/qr_ph.png" alt="QR Code" />
+            <img src={`./src/assets/${props.item.qrImg}`} alt="QR Code" />
         </div>
         <p className='qr-text'>{props.item.qrtext}</p>
     </section>
@@ -53,6 +53,7 @@ BizCard.propTypes = {
         interest: PropTypes.string.isRequired,
         qrlink: PropTypes.string.isRequired,
         qrtext: PropTypes.string.isRequired,
+        qrImg: PropTypes.string.isRequired,
         facebook: PropTypes.string.isRequired,
         twitter: PropTypes.string.isRequired,
         instagram: PropTypes.string.isRequired,
