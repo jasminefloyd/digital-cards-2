@@ -11,7 +11,6 @@ export default [
         interest: "Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.",
         qrlink: "https://link.com",
         qrtext: "Scan QR Code to open Contact",
-        qrImg: "qr_ph.png",
         facebook: "",
         twitter: "",
         instagram: "",

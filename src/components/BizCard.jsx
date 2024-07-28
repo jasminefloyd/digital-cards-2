@@ -1,5 +1,6 @@
 // Building out the structure of the card that will display on the page
 import PropTypes from 'prop-types';
+import qrImg from '../assets/qr_ph.png';
 
 
 export default function BizCard(props) {
@@ -26,7 +27,7 @@ return (
     </section>
     <section className='qr-code-section'>
         <div className="qr-code">
-            <img src={`./src/assets/${props.item.qrImg}`} alt="QR Code" />
+            <img src={qrImg} alt="QR Code" />
         </div>
         <p className='qr-text'>{props.item.qrtext}</p>
     </section>
