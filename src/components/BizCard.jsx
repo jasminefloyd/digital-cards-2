@@ -8,7 +8,7 @@ export default function BizCard(props) {
 return (
     <>
     <section className='info'>
-        <img src={`./src/assets/${props.item.cardImg}`} className='profile-pic' />
+        <img src={`/digital-cards-2/assets/${props.item.cardImg}`} className='profile-pic' />
         <h1 className='name'>{props.item.name}</h1>
         <p className='job-title'>{props.item.title}</p>
         <p className='website'>{props.item.website}</p>
