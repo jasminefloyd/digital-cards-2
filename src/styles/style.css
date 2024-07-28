@@ -195,3 +195,11 @@ html, body {
   background-repeat: no-repeat;
   border: none;
 }
+
+
+@media (max-width: 600px) {
+  .container {
+    width: 550px;
+    height: 868px;
+  }
+}
