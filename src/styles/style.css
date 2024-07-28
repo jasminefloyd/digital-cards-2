@@ -1,0 +1,203 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+/* Main Page */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 868px;
+  background-color: #282D35;
+  padding: 20px; /* Adjust padding for mobile */
+  align-items: center;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 550px;
+    height: 868px;
+    padding: 100px; /* Restore padding for larger screens */
+  }
+}
+
+/* Info Section */
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  border-radius: 10px 10px 0 0;
+}
+
+.profile-pic {
+  height: 317px;
+  border-radius: 10px 10px 0 0;
+  background-color: #4A4E74;
+}
+
+.name {
+  font-size: 25px;
+  font-weight: bold;
+  padding: 0;
+  margin: 17px 0 6px 0;
+}
+
+.job-title {
+  font-size: 12.8px;
+  color: #F47D27;
+  margin: 6.19px 0 0 0;
+  padding: 0;
+}
+
+.website {
+  font-size: 10.24px;
+  color: #4A4E74;
+  margin: 8.81px 0 0 0;
+  padding: 0;
+}
+
+.connect-btns {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 17px;
+  margin: 17px 0 0 0;
+}
+
+.email-btn {
+  margin-left: 35px;
+  margin-right: 17px;
+  width: 115px;
+  height: 34px;
+  border-radius: 6px;
+}
+
+.linkedin-btn {
+  margin-right: 35px;
+  width: 115px;
+  height: 34px;
+  border-radius: 6px;
+}
+
+/* About Section */
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  width: 317px;
+}
+
+.about-section > h2 {
+  margin: 25px 5px 0 35px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 242.71px;
+}
+
+.about-section > p {
+  width: 247px;
+  font-size: 10.24px;
+  color: #4A4E74;
+  margin: 5px 0 0 35px;
+}
+
+/* Interest Section */
+
+.interest-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #F5F5F5;
+  width: 317px;
+}
+
+.interest-section > h2 {
+  margin: 25px 5px 0 35px;
+  font-size: 16px;
+  font-weight: bold;
+  width: 242.71px;
+}
+
+
+.interest-section > p {
+  width: 247px;
+  font-size: 10.24px;
+  color: #4A4E74;
+  margin: 5px 0 0 35px;
+}
+
+
+/* QR Code Section */
+
+.qr-code-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F5F5F5;
+  width: 317px;
+} 
+
+.qr-code > img {
+  margin-top: 15px;
+  width: 155px;
+  height: 155px;
+}
+
+.qr-text {
+  width: 247px;
+  font-size: 12px;
+  color: #4A4E74;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 31px;
+}
+
+
+/* Footer Section */
+
+.footer-box {
+  display: flex;
+  justify-content: center;
+  background-color: #D5D4D8;
+  width: 100%;
+  max-width: 317px;
+  border-radius: 0 0 10px 10px;
+  padding: 19px 0;
+  gap: 24px; 
+}
+
+.footer-box > button {
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+}
+
+.twitter {
+  background-image: url(./assets/twitter.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+.facebook {
+  background-image: url(./assets/facebook.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+.instagram {
+  background-image: url(./assets/instagram.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+.github {
+  background-image: url(./assets/github.png);
+  background-repeat: no-repeat;
+  border: none;
+}
+.linkedin {
+  background-image: url(./assets/linkedin.png);
+  background-repeat: no-repeat;
+  border: none;
+}
