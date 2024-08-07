@@ -14,12 +14,10 @@ export default function App() {
     
 
   return (
-    <>
       <div className='container'>
           {bizcards}
           <Footer />
       </div>
-    </>
   )
 }
 
