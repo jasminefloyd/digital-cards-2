@@ -1,21 +1,38 @@
 import Footer from './components/Footer'
 import BizCard from './components/BizCard'
-import data from './data/cardsData'
+import { supabase } from './config/supabase'
 
 export default function App() {
-  const bizcards = data.map(item => {
-    return (
-      <BizCard
-          key={item.id}
-          item={item}
-      />
-    )
-})        
+  const [cardData, setCardData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const { data } = await supabase.from('cardData').select('*')
+
+      setCardData(data || [])
+    };
+
+    fetchData(); 
+  }, []); 
+
+//   const bizcards = data.map(item => {
+//     return (
+//       <BizCard
+//           key={item.id}
+//           item={item}
+//       />
+//     )
+// })        
     
 
   return (
       <div className='container'>
-          {bizcards}
+        { 
+        cardData.map(item => (
+            <BizCard key={item.id || item.locationName} item={item} /> 
+          ))
+        }
+          {/* {bizcards} */}
           <Footer />
       </div>
   )
