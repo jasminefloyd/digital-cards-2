@@ -11,6 +11,7 @@ export default function App() {
       const { data } = await supabase
       .from('cardData')
       .select('*')
+      .insert(payload.data)
 
       setCardData(data || [])
     };
